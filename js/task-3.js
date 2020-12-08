@@ -1,4 +1,7 @@
-const findBestEmployee = function(employees) {
+// for...in
+
+
+const findBestEmployee = function (employees) {
 
   const names = Object.keys(employees);
   const tasks = Object.values(employees);
@@ -12,7 +15,7 @@ const findBestEmployee = function(employees) {
       maxIndex = tasks.indexOf(task);
     }
   }
-return names[maxIndex];
+  return names[maxIndex]
 };
 
 console.log(

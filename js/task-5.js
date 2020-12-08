@@ -5,10 +5,12 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 2 },
 ];
 
-const getAllPropValues = function(arr, prop) {
-  let array = [];
-  for (const product of products) {
-    array.push(product[prop]);
+const getAllPropValues = function (arr, prop) {
+  const array = [];
+  for (const key of arr) {
+    if (Object.keys(key).includes(prop)) {
+      array.push(key[prop]);
+    }
   }
   return array;
 };
