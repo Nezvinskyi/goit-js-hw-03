@@ -2,10 +2,10 @@ const findBestEmployee = function (employees) {
 
   let maxNumberOfTasks = 0;
   let bestEmployee = '';
-  for (const employee in employees) {
-    if (employees[employee] > maxNumberOfTasks) {
-      maxNumberOfTasks = employees[employee];
-      bestEmployee = employee;
+  for (const key in employees) {
+    if (employees[key] > maxNumberOfTasks) {
+      maxNumberOfTasks = employees[key];
+      bestEmployee = key;
     }
   }
   return bestEmployee
