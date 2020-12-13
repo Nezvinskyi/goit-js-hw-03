@@ -4,7 +4,6 @@ const countTotalSalary = function(employees) {
     total += employees[key];
   }
   return total
-
 };
 
 
